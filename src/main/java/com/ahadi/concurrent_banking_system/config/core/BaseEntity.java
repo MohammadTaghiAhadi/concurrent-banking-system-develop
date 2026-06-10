@@ -39,4 +39,8 @@ public class BaseEntity {
     @LastModifiedBy
     private String updatingUser;
 
+    @Version
+    @Column(nullable = false)
+    private long version;
+
 }
